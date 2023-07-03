@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+<body>
+   
+
+<form name="Form" onsubmit="return validateForm()" >
+  
+    <center>
+    <div class="image">
+    <img src="images/logo1.png">
+    </div>
+</center>
+
+     <h1>Event Registration Form</h1>
+     <br>
+    <div class="box">
+        <label>Full Name</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    
+
+
+    <div class="box">
+        <label>Email Address</label>
+        <input type="text" name="email" id="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+        <label>Password</label>
+        <input type="text" name="password" id="password">
+        <div class="error" id="passwordErr"></div>
+    </div>
+    
+    <div class="box">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile"  id="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+
+    <div class="box1">
+        <label>Batch</label>
+        <select name="batch" id="batch">
+            <option>Select</option>
+            <option>M.Tech</option>
+            <option>B.Tech</option>
+            <option>PHD</option>
+        </select> 
+        <div class="error" id="batchErr"></div>
+    </div>
+    <div class="box2">
+        <label>Cultural Fest</label>
+        <select name="events" id="events">
+            <option>Select</option>
+            <option>Rivera</option>
+            <option>Gravitas</option>
+            <option>Clubs</option>
+        </select> 
+        <div class="error" id="eventsErr"></div>
+    </div>
+ 
+
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+
+    <div class="box3">
+        <label>Zip Code</label>
+        <input type="text" name="zipcode"id="zipcode">
+        <div class="error" id="zipcodeErr"></div>
+    </div>
+   
+
+
+    
+    
+    <div class="box4">
+        <label>Date Of Birth</label>
+        <div class="calendar" id="dob">
+            <label><input type="date" name="dob" value="dob"> </label>
+
+        </div>
+        <div class="error" id="dobErr"></div>
+    </div>
+
+
+
+  
+          
+    <div class="box">
+        <input type="submit" value="Register">
+    </div>
+</form>
+
+
+</body>
+</html>
